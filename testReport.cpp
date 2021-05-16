@@ -10,7 +10,7 @@ using namespace std;
 int main() {
 
 
-cout << "Testing Report" << endl;
+cout << "Testing First part Report" << endl;
 
 	  dataAQ theAnswers;
     cout << std::setprecision(2) << std::fixed;
@@ -42,7 +42,7 @@ cout << "Testing Report" << endl;
     string expectReport ="print summary demog Data:\nRegion info: comboData, MN\nEducation info:\n(Bachelor or more): 32.81% and total: 1790458\n(high school or more): 92.09% and total: 5025407\nTotal population: 5457173\nRacial Demographics Info: \n";
     
     std::string subReport = theReport.substr(0, expectReport.length());
-    cout << "difference in characters: " << theReport.compare(expectReport);
+
     ASSERT_EQUALS(expectReport, subReport);
 
   return 0;
